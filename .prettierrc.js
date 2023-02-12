@@ -1,7 +1,10 @@
 module.exports = {
   semi: true,
-  trailingComma: "all",
+  trailingComma: 'all',
   singleQuote: true,
-  printWidth: 120,
+  printWidth: 150,
   tabWidth: 2,
+  quoteProps: 'as-needed',
+  endOfLine: 'lf',
+  embeddedLanguageFormatting: 'auto'
 };

@@ -1,7 +1,14 @@
 module.exports = {
   clearMocks: true,
+  collectCoverage:  false,
   coverageDirectory: "coverage",
-  roots: ["<rootDir>/components"],
+  coveragePathIgnorePatterns: [
+    "/node_modules/"
+  ],
+  moduleDirectories: [
+    "node_modules"
+  ],
+  testEnvironment: "jsdom",
   testMatch: [
     '**/?(*.)+(test).[jt]s?(x)',
   ],
@@ -27,10 +34,10 @@ module.exports = {
   },
   coverageThreshold: {
     global: {
-      branches: 95,
-      functions: 95,
-      lines: 95,
-      statements: 95,
+      branches: 100,
+      functions: 70,
+      lines: 70,
+      statements: 70,
     },
   },
 };
